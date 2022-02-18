@@ -203,8 +203,12 @@ By using {FullAppName} you agree to the Windows Sysinternals EULA. It can be fou
       string EnvVariableName = "PATH";
       EnvironmentVariableTarget scope = EnvironmentVariableTarget.Machine; // or User
       string? oldValue = Environment.GetEnvironmentVariable(EnvVariableName, scope);
-      string? newValue = oldValue + @";" + Path.Combine(InstallLocation, "bin");
-      Environment.SetEnvironmentVariable(EnvVariableName, newValue, scope);
+      string installBinPath = @";" + Path.Combine(InstallLocation, "bin");
+      if (oldValue != null && !oldValue.Contains(installBinPath))
+      {
+        string? newValue = oldValue + installBinPath;
+        Environment.SetEnvironmentVariable(EnvVariableName, newValue, scope);
+      }
 
       Log("Cleaning Up");
       Directory.Delete(Path.Combine(InstallLocation, ZipSubdir), true);
