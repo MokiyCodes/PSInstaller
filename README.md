@@ -3,7 +3,11 @@ A PSTools Installer in C#, for installing [PSTools](https://docs.microsoft.com/e
 
 **Made by a 3rd party, not created by, nor endorsed by Microsoft!**
 
-## Installation
+## Usage
+To use this to install SysInternals' PSTools, or SysInternals' whole suite, follow these steps:
+1. Download and run [this](https://github.com/MokiyCodes/PSInstaller/releases/latest/download/FrameworkDependent-Portable.exe) (`FrameworkDependent-Portable.exe`)
+2. Follow instructions in the command-line window. Accept any administrator prompts that appear.
+3. If for some reason the CMD doesn't appear, use [this](https://github.com/MokiyCodes/PSInstaller/releases/latest/download/SelfContained-x86.exe) executable instead.
 
 ## Usage in scripts
 ### PSTools Install
