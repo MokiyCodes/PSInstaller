@@ -186,6 +186,8 @@ class Installer
       ZipFile.ExtractToDirectory(PSZipLocation, InstallLocation);
       CopyAll(new DirectoryInfo(Path.Combine(InstallLocation, ZipSubdir)), new DirectoryInfo(InstallLocation));
 
+      Directory.Delete(Path.Combine(InstallLocation, ZipSubdir), true);
+
       File.Delete(Path.Combine(InstallLocation, "bin", "README.md"));
       File.WriteAllText(Path.Combine(InstallLocation,"README.txt"),$@"
 /// PSTools | Installed from {PSURL} by PSTI (PowerShell Tools Installer) ///
