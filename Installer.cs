@@ -1,4 +1,4 @@
-// SysInternals PSTools/Suite Installer
+// Zero-Dependency SysInternals PSTools/Suite Installer
 // MokiyCodes
 // 18.02.2022
 
