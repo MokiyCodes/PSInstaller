@@ -57,7 +57,6 @@ class Installer
         Console.Title = "Existing Installation Found!";
         Console.Write("Existing installation found at " + InstallLocation + ".\nNot removing this will cause the installation to abort.\nDo you wish to remove this? [y/N] ");
         string? input = Console.ReadLine();
-        Console.WriteLine("");
         if (input == null || !input.ToLower().StartsWith("y"))
         {
           Log("Aborting...");
@@ -65,6 +64,7 @@ class Installer
           return false;
         }
       }
+      Title();
       Log("Removing old installation...");
       Directory.Delete(InstallLocation, true);
     };
