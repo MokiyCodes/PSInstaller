@@ -35,7 +35,7 @@ class Installer
     Console.Clear();
     Console.WriteLine($@"
    {AppName} Installer
-        0.1.1
+        0.1.2
 ");
   }
   private static void UseFullSysInternalsSuite()
