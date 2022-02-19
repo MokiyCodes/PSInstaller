@@ -88,7 +88,7 @@ class Installer
       Process? proc = Process.Start(startInfo);
       if (proc != null)
       {
-        Log("Waiting for administrator process to exit...\nPlease complete installation in other process...", "Waiting for other process");
+        Log("Waiting for administrator process to exit...\nPlease complete installation in the other window.", "Waiting for other process");
         proc.WaitForExit();
       }
       die();
