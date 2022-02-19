@@ -7,7 +7,7 @@
 // 2. Paste this file into Program.cs
 // 3. In the project's properties, set the .NET Version to .NET 6.0
 // 4. In the project's properties, set the Target OS to Windows, and Startup Objcect to Installer
-// 5. Optionally, set the icon to sysinteralsicon.png
+// 5. Optionally, set the icon to sysinteralsicon.ico
 // 6. Go to Build, then Build Solution
 
 using System;
