@@ -1,3 +1,5 @@
+[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://vshymanskyy.github.io/StandWithUkraine)
+
 # PSInstaller
 A PSTools Installer in C#, for installing [PSTools](https://docs.microsoft.com/en-us/sysinternals/downloads/pstools), or, if you want, the whole [SysInternals Suite](https://docs.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite)
 
